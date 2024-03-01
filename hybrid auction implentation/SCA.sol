@@ -13,15 +13,17 @@ contract Submission {
     function bidderEncryptedBidSubmission(uint256 num) public {
         pb12 = num;
     }
-    function AuctioneerRetrivesBidder1EncryptedData() public view returns (uint256){
+    // function AuctioneerRetrivesBidder1EncryptedData() public view returns (uint256){
+    //     return pb12;
+    // }
+    // function AuctioneerRetrievesBidder2EncryptedData() public view returns (uint256){
+    //     return pb21;
+    // }
+
+
+    function retrieveBidderEncryptedBidSubmission() public view returns (uint256){
         return pb12;
     }
-    function AuctioneerRetrievesBidder2EncryptedData() public view returns (uint256){
-        return pb21;
-    }
-
-
-
 
 
 
