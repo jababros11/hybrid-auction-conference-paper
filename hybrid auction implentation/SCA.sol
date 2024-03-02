@@ -5,13 +5,12 @@ pragma solidity >=0.8.2 <0.9.0;
 
 contract Submission {
 
-    uint256 pb12;
-    uint256 pb21;
+    uint256[] pb ;
 
     
     // this part performs the part of first half where auctioneer gets the encrypted value of the bidders and adds half of its random share
-    function bidderEncryptedBidSubmission(uint256 num) public {
-        pb12 = num;
+    function bidderEncryptedBidSubmission(uint256[] memory slices ) public {
+        pb = slices;
     }
     // function AuctioneerRetrivesBidder1EncryptedData() public view returns (uint256){
     //     return pb12;
@@ -21,8 +20,8 @@ contract Submission {
     // }
 
 
-    function retrieveBidderEncryptedBidSubmission() public view returns (uint256){
-        return pb12;
+    function retrieveBidderEncryptedBidSubmission() public view returns (uint256[] memory){
+        return pb;
     }
 
 
