@@ -3,7 +3,7 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 
-contract Submission {
+contract SCR {
 
     string pb ;
     string VariableForBidder;
@@ -26,10 +26,5 @@ contract Submission {
     function fetchVariable() public view returns(string memory){
         return VariableForBidder;
     }
-// Function to receive Ether. msg.data must be empty
-    receive() external payable {}
-
-// Fallback function is called when msg.data is not empty
-    fallback() external payable {}
 }
 
